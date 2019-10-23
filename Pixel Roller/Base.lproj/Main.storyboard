@@ -69,6 +69,32 @@
                                 <rect key="frame" x="298" y="453" width="96" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Edr-xi-Hg1">
+                                <rect key="frame" x="104" y="624" width="96" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="D6_6"/>
+                                <connections>
+                                    <action selector="updateD6:" destination="BV1-FR-VrT" eventType="touchUpInside" id="mLP-yx-85U"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtt-Ua-XMZ">
+                                <rect key="frame" x="20" y="826" width="67" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetDice:" destination="BV1-FR-VrT" eventType="touchUpInside" id="jdW-o4-cmF"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hrh-BJ-WGM">
+                                <rect key="frame" x="266" y="44" width="65" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
@@ -83,6 +109,7 @@
                         <outlet property="diceSpot7" destination="Ro6-iC-Mam" id="C1g-WN-7D8"/>
                         <outlet property="diceSpot8" destination="iMK-dy-e31" id="uri-1h-qqc"/>
                         <outlet property="diceSpot9" destination="MhW-7Q-ZoF" id="RpE-xq-H9B"/>
+                        <outlet property="totalScore" destination="Hrh-BJ-WGM" id="i7j-RE-3Eg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
@@ -92,6 +119,7 @@
     </scenes>
     <resources>
         <image name="D4_4" width="128" height="128"/>
+        <image name="D6_6" width="128" height="128"/>
         <image name="Pixel-Roller-Border" width="1125" height="2436"/>
         <image name="background" width="1920" height="1080"/>
     </resources>
