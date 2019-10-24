@@ -183,6 +183,59 @@ class GameViewController: UIViewController {
     }
     
 
+    @IBAction func updateD8(_ sender: UIButton) {
+        rollD8()
+        switch diceSpotIndex {
+        case 1:
+            rollD8()
+            diceSpot2.image = UIImage(named: d8Array[randomD8Index])
+            diceSpotIndex = 2
+            totalPoints += d8Points
+            
+        case 2:
+            rollD8()
+            diceSpot3.image = UIImage(named: d8Array[randomD8Index])
+            diceSpotIndex = 3
+            totalPoints += d8Points
+        case 3:
+            rollD8()
+            diceSpot4.image = UIImage(named: d8Array[randomD8Index])
+            diceSpotIndex = 4
+            totalPoints += d8Points
+        case 4:
+            rollD8()
+            diceSpot5.image = UIImage(named: d8Array[randomD8Index])
+            diceSpotIndex = 5
+            totalPoints += d8Points
+        case 5:
+            rollD8()
+            diceSpot6.image = UIImage(named: d8Array[randomD8Index])
+            diceSpotIndex = 6
+            totalPoints += d8Points
+        case 6:
+            rollD8()
+            diceSpot7.image = UIImage(named: d8Array[randomD8Index])
+            diceSpotIndex = 7
+            totalPoints += d8Points
+        case 7:
+            rollD8()
+            diceSpot8.image = UIImage(named: d4Array[randomD8Index])
+            diceSpotIndex = 8
+            totalPoints += d8Points
+        case 8:
+            rollD8()
+            diceSpot9.image = UIImage(named: d8Array[randomD8Index])
+            diceSpotIndex = 9
+            totalPoints += d8Points
+        default:
+            rollD8()
+            diceSpot1.image = UIImage(named: d8Array[randomD8Index])
+            diceSpotIndex = 1
+            totalPoints += d8Points
+            
+        }
+        totalScore.text = "\(totalPoints)"
+    }
     
     @IBAction func resetDice(_ sender: UIButton) {
         reset()

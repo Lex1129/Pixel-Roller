@@ -77,10 +77,10 @@
                                     <action selector="updateD6:" destination="BV1-FR-VrT" eventType="touchUpInside" id="mLP-yx-85U"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtt-Ua-XMZ">
-                                <rect key="frame" x="20" y="826" width="67" height="55"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtt-Ua-XMZ">
+                                <rect key="frame" x="11" y="812" width="127" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Reset">
+                                <state key="normal" image="Reset-proto">
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
@@ -95,6 +95,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Hh-QU-ITR">
+                                <rect key="frame" x="208" y="615" width="111" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="D8_8"/>
+                                <connections>
+                                    <action selector="updateD8:" destination="BV1-FR-VrT" eventType="touchUpInside" id="sFb-5W-4aI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
@@ -120,7 +128,9 @@
     <resources>
         <image name="D4_4" width="128" height="128"/>
         <image name="D6_6" width="128" height="128"/>
+        <image name="D8_8" width="128" height="128"/>
         <image name="Pixel-Roller-Border" width="1125" height="2436"/>
+        <image name="Reset-proto" width="128" height="64"/>
         <image name="background" width="1920" height="1080"/>
     </resources>
 </document>
