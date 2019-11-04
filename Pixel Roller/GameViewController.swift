@@ -42,7 +42,10 @@ let d20Array = ["D20_1", "D20_2", "D20_3", "D20_4", "D20_5", "D20_6", "D20_7", "
 
 class GameViewController: UIViewController {
     
-
+    var menuShowing = false
+    
+    @IBOutlet weak var LeadingConstraint: NSLayoutConstraint!
+    
         
     @IBOutlet weak var totalScore: UILabel!
     
@@ -69,7 +72,23 @@ class GameViewController: UIViewController {
         super.viewDidLoad()
         reset()
         
+        
     }
+    
+    @IBAction func openMenu(_ sender: Any) {
+        if (menuShowing) {
+            LeadingConstraint.constant = -210
+        } else {
+            LeadingConstraint.constant = 0
+
+        }
+        UIView.animate(withDuration: 0.2, delay: 0.0, options: .curveEaseIn, animations:
+            {
+                self.view.layoutIfNeeded()
+        })
+        menuShowing = !menuShowing
+    }
+    
     
     
     @IBAction func updateD4(_ sender: UIButton) {

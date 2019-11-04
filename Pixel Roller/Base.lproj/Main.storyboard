@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C7g-kE-kgK">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,24 +21,24 @@
                                 <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pixel-Roller-Border" translatesAutoresizingMaskIntoConstraints="NO" id="wm7-Zm-ZN7">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="788"/>
+                                <rect key="frame" x="0.0" y="94" width="414" height="705"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="usz-ti-Wnj">
-                                <rect key="frame" x="20" y="184" width="96" height="96"/>
+                                <rect key="frame" x="20" y="260" width="96" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dEZ-hz-TMl">
-                                <rect key="frame" x="159" y="184" width="96" height="96"/>
+                                <rect key="frame" x="159" y="260" width="96" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gU7-wl-8cg">
-                                <rect key="frame" x="298" y="184" width="96" height="96"/>
+                                <rect key="frame" x="298" y="260" width="96" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9BY-4E-wkf">
-                                <rect key="frame" x="0.0" y="625" width="96" height="96"/>
+                                <rect key="frame" x="0.0" y="650" width="96" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="D4_4"/>
                                 <connections>
@@ -46,31 +46,31 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QXt-aO-dXG">
-                                <rect key="frame" x="20" y="316" width="96" height="96"/>
+                                <rect key="frame" x="20" y="375" width="96" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MQm-c1-126">
-                                <rect key="frame" x="159" y="316" width="96" height="96"/>
+                                <rect key="frame" x="159" y="375" width="96" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="6" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uYZ-Zv-YSQ">
-                                <rect key="frame" x="298" y="316" width="96" height="96"/>
+                                <rect key="frame" x="298" y="375" width="96" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="7" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ro6-iC-Mam">
-                                <rect key="frame" x="20" y="453" width="96" height="96"/>
+                                <rect key="frame" x="20" y="500" width="96" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="8" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iMK-dy-e31">
-                                <rect key="frame" x="159" y="453" width="96" height="96"/>
+                                <rect key="frame" x="159" y="500" width="96" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MhW-7Q-ZoF">
-                                <rect key="frame" x="298" y="453" width="96" height="96"/>
+                                <rect key="frame" x="298" y="500" width="96" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Edr-xi-Hg1">
-                                <rect key="frame" x="104" y="624" width="96" height="96"/>
+                                <rect key="frame" x="104" y="650" width="96" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="D6_6"/>
                                 <connections>
@@ -89,25 +89,46 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hrh-BJ-WGM">
-                                <rect key="frame" x="266" y="44" width="65" height="63"/>
+                                <rect key="frame" x="266" y="110" width="65" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Hh-QU-ITR">
-                                <rect key="frame" x="208" y="615" width="111" height="116"/>
+                                <rect key="frame" x="208" y="650" width="96" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="D8_8"/>
                                 <connections>
                                     <action selector="updateD8:" destination="BV1-FR-VrT" eventType="touchUpInside" id="sFb-5W-4aI"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tF5-XA-1IG">
+                                <rect key="frame" x="-212" y="88" width="200" height="808"/>
+                                <color key="backgroundColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="tn3-0p-O1o"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="tF5-XA-1IG" firstAttribute="top" secondItem="4qk-I5-YsI" secondAttribute="top" id="JLQ-qj-Fw3"/>
+                            <constraint firstAttribute="bottom" secondItem="tF5-XA-1IG" secondAttribute="bottom" id="cEU-gG-yYc"/>
+                            <constraint firstItem="tF5-XA-1IG" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" id="wub-cw-S0Z"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
                     </view>
+                    <navigationItem key="navigationItem" id="TuU-C3-QsJ">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" image="Menu_Hat-1" id="dfL-Eq-3QC">
+                            <color key="tintColor" cocoaTouchSystemColor="lightTextColor"/>
+                            <connections>
+                                <action selector="openMenu:" destination="BV1-FR-VrT" id="IrS-4Q-FZL"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="LeadingConstraint" destination="wub-cw-S0Z" id="NQ4-7U-xAR"/>
                         <outlet property="diceSpot1" destination="usz-ti-Wnj" id="Zbo-hx-o8d"/>
                         <outlet property="diceSpot2" destination="dEZ-hz-TMl" id="tkQ-TN-E0I"/>
                         <outlet property="diceSpot3" destination="gU7-wl-8cg" id="guM-Jw-wuR"/>
@@ -122,6 +143,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="138.61607142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="F5q-Av-fEm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="C7g-kE-kgK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uVs-q0-ZOx">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.45791083570000002" green="0.71936470269999997" blue="0.94447416070000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BV1-FR-VrT" kind="relationship" relationship="rootViewController" id="Bk1-Jf-RhO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IrL-iI-gYF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
         </scene>
     </scenes>
@@ -129,6 +169,7 @@
         <image name="D4_4" width="128" height="128"/>
         <image name="D6_6" width="128" height="128"/>
         <image name="D8_8" width="128" height="128"/>
+        <image name="Menu_Hat-1" width="128" height="128"/>
         <image name="Pixel-Roller-Border" width="1125" height="2436"/>
         <image name="Reset-proto" width="128" height="64"/>
         <image name="background" width="1920" height="1080"/>
