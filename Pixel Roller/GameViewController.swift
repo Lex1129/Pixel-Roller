@@ -71,7 +71,7 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         reset()
-        
+        LeadingConstraint.constant = -210
         
     }
     
