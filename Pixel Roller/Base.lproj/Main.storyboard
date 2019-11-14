@@ -21,7 +21,7 @@
                                 <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pixel-Roller-Border" translatesAutoresizingMaskIntoConstraints="NO" id="wm7-Zm-ZN7">
-                                <rect key="frame" x="0.0" y="94" width="414" height="705"/>
+                                <rect key="frame" x="0.0" y="96" width="414" height="705"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                             </imageView>
@@ -103,10 +103,25 @@
                                     <action selector="updateD8:" destination="BV1-FR-VrT" eventType="touchUpInside" id="sFb-5W-4aI"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tF5-XA-1IG">
-                                <rect key="frame" x="-212" y="88" width="200" height="808"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tF5-XA-1IG">
+                                <rect key="frame" x="0.0" y="88" width="200" height="808"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfg-st-9vX">
+                                        <rect key="frame" x="36" y="5" width="128" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="8vc-rX-VUI"/>
+                                        </constraints>
+                                        <state key="normal" image="custom_dice"/>
+                                        <connections>
+                                            <action selector="customMenu:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Mqh-1x-D9W"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="cfg-st-9vX" firstAttribute="top" secondItem="tF5-XA-1IG" secondAttribute="top" constant="5" id="95O-wN-3qp"/>
+                                    <constraint firstAttribute="trailing" secondItem="cfg-st-9vX" secondAttribute="trailing" constant="36" id="ECY-ZL-B9h"/>
+                                    <constraint firstItem="cfg-st-9vX" firstAttribute="leading" secondItem="tF5-XA-1IG" secondAttribute="leading" constant="36" id="dcQ-U3-kUN"/>
                                     <constraint firstAttribute="width" constant="200" id="tn3-0p-O1o"/>
                                 </constraints>
                             </view>
@@ -145,6 +160,28 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="138.61607142857142"/>
         </scene>
+        <!--Custom View Controller-->
+        <scene sceneID="Qaz-49-BeM">
+            <objects>
+                <viewController id="UFr-r8-bAV" customClass="CustomViewController" customModule="Pixel_Roller" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GFA-xO-QsX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eaF-sj-7ku">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.13769432902336121" green="0.24805727601051331" blue="0.059660069644451141" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="XxU-Hk-DZ4"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0y4-xK-wro" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1871.0144927536232" y="136.60714285714286"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="F5q-Av-fEm">
             <objects>
@@ -173,5 +210,6 @@
         <image name="Pixel-Roller-Border" width="1125" height="2436"/>
         <image name="Reset-proto" width="128" height="64"/>
         <image name="background" width="1920" height="1080"/>
+        <image name="custom_dice" width="128" height="128"/>
     </resources>
 </document>

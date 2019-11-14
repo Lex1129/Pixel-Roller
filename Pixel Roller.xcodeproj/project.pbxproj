@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D720A408237D8EA10020650F /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D720A407237D8EA10020650F /* CustomViewController.swift */; };
 		D7CFBC7C2359FAE0000A583A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CFBC7B2359FAE0000A583A /* AppDelegate.swift */; };
 		D7CFBC7E2359FAE0000A583A /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D7CFBC7D2359FAE0000A583A /* GameScene.sks */; };
 		D7CFBC802359FAE0000A583A /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = D7CFBC7F2359FAE0000A583A /* Actions.sks */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D720A407237D8EA10020650F /* CustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
 		D7CFBC782359FAE0000A583A /* Pixel Roller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pixel Roller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7CFBC7B2359FAE0000A583A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7CFBC7D2359FAE0000A583A /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				D7CFBC7D2359FAE0000A583A /* GameScene.sks */,
 				D7CFBC7F2359FAE0000A583A /* Actions.sks */,
 				D7CFBC832359FAE0000A583A /* GameViewController.swift */,
+				D720A407237D8EA10020650F /* CustomViewController.swift */,
 				D7CFBC852359FAE0000A583A /* Main.storyboard */,
 				D7CFBC882359FAE3000A583A /* Assets.xcassets */,
 				D7CFBC8A2359FAE3000A583A /* LaunchScreen.storyboard */,
@@ -155,6 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D720A408237D8EA10020650F /* CustomViewController.swift in Sources */,
 				D7CFBC842359FAE0000A583A /* GameViewController.swift in Sources */,
 				D7CFBC7C2359FAE0000A583A /* AppDelegate.swift in Sources */,
 			);
