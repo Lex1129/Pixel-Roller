@@ -1,13 +1,12 @@
 //
 //  GameViewController.swift
-//  Pixel Roller v0.1.0
+//  Pixel Roller v0.1.6
 //
 //  Created by Alexander Fernandez on 10/18/19.
 //  Created by Nick Oquendo on 10/18/19
 //  Created by Trent Maduro on 10/18/19
 //  Copyright © 2019 Octohedron Studios. All rights reserved.
 //
-
 import UIKit
 import SpriteKit
 import AVFoundation
@@ -26,7 +25,6 @@ var d8Points = 0
 var d10Points = 0
 var d12Points = 0
 var d20Points = 0
-
 //Arrays for the dice assets
 let d4Array = ["D4_1", "D4_2", "D4_3", "D4_4"]
 let d6Array = ["D6_1", "D6_2", "D6_3", "D6_4", "D6_5", "D6_6"]
@@ -34,47 +32,26 @@ let d8Array = ["D8_1", "D8_2", "D8_3", "D8_4", "D8_5", "D8_6", "D8_7", "D8_8"]
 let d10Array = ["D10_1", "D10_2", "D10_3", "D10_4", "D10_5", "D10_6", "D10_7", "D10_8", "D10_9", "D10_10"]
 let d12Array = ["D12_1", "D12_2", "D12_3", "D12_4", "D12_5", "D12_6", "D12_7", "D12_8", "D12_9", "D12_10", "D12_11", "D12_12"]
 let d20Array = ["D20_1", "D20_2", "D20_3", "D20_4", "D20_5", "D20_6", "D20_7", "D20_8", "D20_9", "D20_10", "D20_11", "D20_12", "D20_13", "D20_14", "D20_15", "D20_16", "D20_17", "D20_18", "D20_19", "D20_20"]
-
-
-
-
-    
-
 class GameViewController: UIViewController {
-    
     var menuShowing = false
-    
     @IBOutlet weak var LeadingConstraint: NSLayoutConstraint!
-    
-        
+    @IBOutlet weak var diceTray: UIImageView!
     @IBOutlet weak var totalScore: UILabel!
-    
     @IBOutlet weak var diceSpot1: UIImageView!
-    
     @IBOutlet weak var diceSpot2: UIImageView!
-    
     @IBOutlet weak var diceSpot3: UIImageView!
-    
     @IBOutlet weak var diceSpot4: UIImageView!
-    
     @IBOutlet weak var diceSpot5: UIImageView!
-    
     @IBOutlet weak var diceSpot6: UIImageView!
-    
     @IBOutlet weak var diceSpot7: UIImageView!
-    
     @IBOutlet weak var diceSpot8: UIImageView!
-    
     @IBOutlet weak var diceSpot9: UIImageView!
-    
-
+    @IBOutlet weak var diceTraySpot: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         reset()
         LeadingConstraint.constant = -210
-        
     }
-    
     @IBAction func openMenu(_ sender: Any) {
         if (menuShowing) {
             LeadingConstraint.constant = -210
@@ -88,27 +65,16 @@ class GameViewController: UIViewController {
         })
         menuShowing = !menuShowing
     }
-    
-    
-    
-    
     @IBAction func customMenu(_ sender: UIButton) {
     }
-    
-    
-    
-    
     @IBAction func updateD4(_ sender: UIButton) {
-        
-        
-        rollD4()
+       rollD4()
         switch diceSpotIndex {
         case 1:
             rollD4()
             diceSpot2.image = UIImage(named: d4Array[randomD4Index])
             diceSpotIndex = 2
             totalPoints += d4Points
-            
         case 2:
             rollD4()
             diceSpot3.image = UIImage(named: d4Array[randomD4Index])
@@ -142,22 +108,18 @@ class GameViewController: UIViewController {
         case 8:
             rollD4()
             diceSpot9.image = UIImage(named: d4Array[randomD4Index])
-            diceSpotIndex = 9
+            diceSpotIndex = 0
             totalPoints += d4Points
         default:
             rollD4()
             diceSpot1.image = UIImage(named: d4Array[randomD4Index])
             diceSpotIndex = 1
             totalPoints += d4Points
-            
         }
         totalScore.text = "\(totalPoints)"
         }
-        
-        
     @IBAction func updateD6(_ sender: UIButton) {
         rollD6()
-        
         switch diceSpotIndex {
         case 1:
             rollD6()
@@ -185,17 +147,17 @@ class GameViewController: UIViewController {
             diceSpotIndex = 6
             totalPoints += d6Points
         case 6:
-            rollD4()
+            rollD6()
             diceSpot7.image = UIImage(named: d6Array[randomD6Index])
             diceSpotIndex = 7
             totalPoints += d6Points
         case 7:
-            rollD4()
+            rollD6()
             diceSpot8.image = UIImage(named: d6Array[randomD6Index])
             diceSpotIndex = 8
             totalPoints += d6Points
         case 8:
-            rollD4()
+            rollD6()
             diceSpot9.image = UIImage(named: d6Array[randomD6Index])
             diceSpotIndex = 9
             totalPoints += d6Points
@@ -207,8 +169,6 @@ class GameViewController: UIViewController {
         }
         totalScore.text = "\(totalPoints)"
     }
-    
-
     @IBAction func updateD8(_ sender: UIButton) {
         rollD8()
         switch diceSpotIndex {
@@ -217,7 +177,6 @@ class GameViewController: UIViewController {
             diceSpot2.image = UIImage(named: d8Array[randomD8Index])
             diceSpotIndex = 2
             totalPoints += d8Points
-            
         case 2:
             rollD8()
             diceSpot3.image = UIImage(named: d8Array[randomD8Index])
@@ -258,15 +217,13 @@ class GameViewController: UIViewController {
             diceSpot1.image = UIImage(named: d8Array[randomD8Index])
             diceSpotIndex = 1
             totalPoints += d8Points
-            
         }
         totalScore.text = "\(totalPoints)"
     }
-    
     @IBAction func resetDice(_ sender: UIButton) {
         reset()
     }
-    
+//    functions for the randomization of the dice face selection
         func rollD4(){
             randomD4Index = Int.random(in: 0 ... 3)
             if randomD4Index == 0 {
@@ -278,10 +235,7 @@ class GameViewController: UIViewController {
             }else if randomD4Index == 3 {
                 d4Points = 4
             }
-            
-        
     }
-    
         func rollD6() {
             randomD6Index = Int.random(in: 0 ... 5)
             if randomD6Index == 0{
@@ -298,7 +252,6 @@ class GameViewController: UIViewController {
                 d6Points = 6
             }
     }
-    
         func rollD8() {
             randomD8Index = Int.random(in: 0 ... 7)
             if randomD8Index == 0{
@@ -319,7 +272,6 @@ class GameViewController: UIViewController {
                 d8Points = 8
             }
     }
-        
         func rollD10() {
             randomD10Index = Int.random(in: 0 ... 9)
             if randomD10Index == 0{
@@ -372,7 +324,6 @@ class GameViewController: UIViewController {
                 d12Points = 12
             }
     }
-    
         func rollD20() {
             randomD20Index = Int.random(in: 0 ... 19)
             if randomD20Index == 0{
@@ -417,7 +368,7 @@ class GameViewController: UIViewController {
                 d20Points = 20
             }
     }
-    
+//    function for reseting the tray and clearing all dice and postions
         func reset() {
             diceSpotIndex = 0
             diceSpot1.image = nil
@@ -432,7 +383,5 @@ class GameViewController: UIViewController {
             totalPoints = 0
             totalScore.text = "\(totalPoints)"
     }
-
-
 }
 

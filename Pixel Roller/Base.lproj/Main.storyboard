@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C7g-kE-kgK">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,8 +20,8 @@
                                 <autoresizingMask key="autoresizingMask" heightSizable="YES"/>
                                 <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pixel-Roller-Border" translatesAutoresizingMaskIntoConstraints="NO" id="wm7-Zm-ZN7">
-                                <rect key="frame" x="0.0" y="96" width="414" height="705"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="11" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pixel-Roller-Border" translatesAutoresizingMaskIntoConstraints="NO" id="wm7-Zm-ZN7">
+                                <rect key="frame" x="0.0" y="211" width="414" height="431"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                             </imageView>
@@ -153,6 +153,7 @@
                         <outlet property="diceSpot7" destination="Ro6-iC-Mam" id="C1g-WN-7D8"/>
                         <outlet property="diceSpot8" destination="iMK-dy-e31" id="uri-1h-qqc"/>
                         <outlet property="diceSpot9" destination="MhW-7Q-ZoF" id="RpE-xq-H9B"/>
+                        <outlet property="diceTray" destination="wm7-Zm-ZN7" id="U6D-q4-qM9"/>
                         <outlet property="totalScore" destination="Hrh-BJ-WGM" id="i7j-RE-3Eg"/>
                     </connections>
                 </viewController>
